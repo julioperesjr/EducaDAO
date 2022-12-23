@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página Teste</title>
+        <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    </head>
+<body>
+    
+    <div class="container">
+        <div class="campo1">
+            <label for="numero1">Campo 1</label>
+            <input type="text" id="numero1" />
+        </div>
+        <div class="campo2">
+            <label for="numero2">Campo 2</label>
+            <input type="text" id="numero2" />
+        </div>
+        <div class="operacao">
+            <label for="operacao_valor">Operação</label>
+            <select id="operacao_valor">
+                <option value="soma">Soma</option>
+                <option value="subtracao">Subtração</option>
+                <option value="multiplicacao">multiplicação</option>
+                <option value="divisao">Divisão</option>
+                <option value="exponenciacao">Exponenciação</option>
+                <option value="porcentagem">Porcentagem</option>
+            </select>
+        </div>
+        <div class="resultado">
+        <label for="resultado_valor">Resultado</label>
+            <input type="text" id="resultado_valor" disabled/>
+        </div>
+        <div class="botao">
+            <button id="executar" onClick="executar()">Executar</button>
+        </div>
+        <div id="mensagem"></div>
+    </div>
+    <script src="js/index.js"></script>  
+</body>
+</html>
